@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Application Submitted</title>  
+    {% include 'bootstrap.html' %}
+  </head>
+  <body>
+    {% include 'nav.html' %}
+    {% include 'banner.html' %}
+
+    <div class="container">
+      <h1 class="text-center mt-2 mb-4">
+        IndianOil
+      </h1>
+
+      <p>Your application at IOCL has been submitted!</p>
+      
+      <b>Full Name</b>
+      <div class="mb-2">{{application['full_name']}}</div>
+  
+      <b>Designation</b>
+      <div class="mb-2">{{application['designation']}}</div>
+  
+      <b>Grade</b>
+      <div class="mb-2">{{application['grade']}}</div>
+  
+      <b>Employee Number</b>
+      <div class="mb-2">{{application['emp_no']}}</div>
+  
+    </div>
+    {% include 'footer.html' %}
+  </body>
+</html>
