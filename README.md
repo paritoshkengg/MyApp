@@ -1,2 +1,2 @@
-# MyApp
-my app is for testing.
+# jovian-careers-website
+A careers website for Jovian
