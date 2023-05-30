@@ -7,42 +7,48 @@
   <body>
     {% include 'nav.html' %}
     {% include 'banner.html' %}
-    <div class="container">
-      <h1 class="text-center mt-2 mb-4">
-        IndianOil
-      </h1>
-      <div class="row" style="margin-bottom:32px">
-        <div class="col-md-6">
-            <p class="lead">
-                IOCL, which stands for Indian Oil Corporation Limited, is a leading oil and gas company in India. Established in 1959, IOCL is a state-owned enterprise and the largest commercial enterprise in the country. It is a Fortune Global 500 company and operates in various segments of the oil and gas industry, including refining, pipeline transportation, marketing of petroleum products, and petrochemicals.
+      <div class="container">
+          <h1 class="text-center mt-2 mb-4">
+              IndianOil
+          </h1>
+          <div class="row" style="margin-bottom:32px">
+              <div class="col-md-6">
+                  <p class="lead">
+                      IOCL, which stands for Indian Oil Corporation Limited, is a leading oil and gas company in India. Established in 1959, IOCL is a state-owned enterprise and the largest commercial enterprise in the country. It is a Fortune Global 500 company and operates in various segments of the oil and gas industry, including refining, pipeline transportation, marketing of petroleum products, and petrochemicals.
 
-                IOCL has a vast network of refineries, pipelines, and marketing infrastructure across India. The company owns and operates refineries at locations such as Paradip, Haldia, Barauni, Guwahati, Mathura, Panipat, and Bongaigaon, with a combined refining capacity of over 80 million metric tonnes per year. These refineries produce a wide range of products, including gasoline, diesel, liquefied petroleum gas (LPG), aviation fuel, and various petrochemicals.
+                      IOCL has a vast network of refineries, pipelines, and marketing infrastructure across India. The company owns and operates refineries at locations such as Paradip, Haldia, Barauni, Guwahati, Mathura, Panipat, and Bongaigaon, with a combined refining capacity of over 80 million metric tonnes per year. These refineries produce a wide range of products, including gasoline, diesel, liquefied petroleum gas (LPG), aviation fuel, and various petrochemicals.
 
-                IOCL plays a crucial role in meeting India's energy needs by supplying petroleum products to consumers across the country. It operates a robust distribution and marketing network consisting of retail outlets, aviation fuel stations, and bulk consumer pumps. The company is also involved in the marketing of natural gas and alternative energy sources.
+                      IOCL plays a crucial role in meeting India's energy needs by supplying petroleum products to consumers across the country. It operates a robust distribution and marketing network consisting of retail outlets, aviation fuel stations, and bulk consumer pumps. The company is also involved in the marketing of natural gas and alternative energy sources.
 
-                Apart from its domestic operations, IOCL has been actively expanding its presence internationally. It has ventured into exploration and production activities in countries like the United Arab Emirates, Nigeria, Libya, and Russia. IOCL has also invested in overseas refineries and strategic oil storage facilities to secure India's energy requirements.
+                      Apart from its domestic operations, IOCL has been actively expanding its presence internationally. It has ventured into exploration and production activities in countries like the United Arab Emirates, Nigeria, Libya, and Russia. IOCL has also invested in overseas refineries and strategic oil storage facilities to secure India's energy requirements.
 
-                As a responsible corporate citizen, IOCL emphasizes sustainable development and has undertaken various initiatives in the areas of environment, health, and safety. The company is committed to energy conservation, reducing emissions, and promoting renewable energy sources.
+                      As a responsible corporate citizen, IOCL emphasizes sustainable development and has undertaken various initiatives in the areas of environment, health, and safety. The company is committed to energy conservation, reducing emissions, and promoting renewable energy sources.
 
-                IOCL has a strong focus on research and development to enhance operational efficiency, develop cleaner fuels, and explore new technologies. It collaborates with leading national and international research institutes and has its own research and development centers.
+                      IOCL has a strong focus on research and development to enhance operational efficiency, develop cleaner fuels, and explore new technologies. It collaborates with leading national and international research institutes and has its own research and development centers.
 
-                Overall, IOCL plays a pivotal role in India's energy landscape, ensuring the availability of petroleum products, promoting energy security, and driving economic growth.
-            </p>
-        </div>
-        <div class="d-none d-md-block col-md-6">
-        <img src="/static/people.jpeg" style="height:320px;border-radius:4px;">
-        </div>
+                      Overall, IOCL plays a pivotal role in India's energy landscape, ensuring the availability of petroleum products, promoting energy security, and driving economic growth.
+                  </p>
+              </div>
+              <div class="d-none d-md-block col-md-6">
+                  <img src="/static/people.jpeg" style="height:320px;border-radius:4px;">
+              </div>
+          </div>
+          <h2 class="text-center mt-2 mb-4">Open Positions</h2>
+          <div>
+              {% for job in jobs %}
+              {% include 'jobitem.html' %}
+              {% endfor %}
+          </div>
+          
+              <div class="col-2 padding-right:16px">
+                  <a href="/job/Apply" type="button" class="btn btn-outline-primary float-right align-middle">Apply</a>
+              </div>
+          
+
+          <div class="text-center">
+              <a class="btn btn-primary btn-lg" href="mailto:hello@jovian.ai?subject=Question%20about%20Job%20Opernings&body=My%20name%3A%20%3Cyour%20name%20here%3E%0D%0A%0D%0AMy%20questions%3A%20%3Center%20question%20here%3E%0D%0A">Contact Us</a>
+          </div>
       </div>
-      <h2 class="text-center mt-2 mb-4">Open Positions</h2>
-      <div>
-        {% for job in jobs %}
-          {% include 'jobitem.html' %}
-        {% endfor %}
-      </div>
-      <div class="text-center">
-      <a class="btn btn-primary btn-lg" href="mailto:hello@jovian.ai?subject=Question%20about%20Job%20Opernings&body=My%20name%3A%20%3Cyour%20name%20here%3E%0D%0A%0D%0AMy%20questions%3A%20%3Center%20question%20here%3E%0D%0A">Contact Us</a>
-      </div>
-    </div>
     {% include 'footer.html' %}
   </body>
 </html>
