@@ -16,7 +16,7 @@ def list_jobs():
   jobs = load_jobs_from_db()
   return jsonify(jobs)
 
-@app.route("/job/<Name>")
+@app.route("/job/Apply")
 def show_job(Name):
   job = load_job_from_db(Name)
   print(job)
