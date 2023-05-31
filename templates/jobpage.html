@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{job.Name}} - Jovian Careers</title>
+    <title>Jovian Careers</title>
     {% include 'bootstrap.html' %}
   </head>
   <body>
@@ -11,12 +11,7 @@
       <h1 class="text-center mt-2 mb-4">
         Jovian Careers
       </h1>
-      <h3 class="mb-2">{{job.Name}}</h3>
-      <p class="lead mt-0">{{job.Designation}}</p>
       
-      
-      <h4>Salary</h4>
-      <p>{{job.Grade}}</p>
       {% include 'application_form.html' %}
     </div>
     {% include 'footer.html' %}
