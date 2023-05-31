@@ -3,6 +3,7 @@ import os
 
 
 db_connection_string =os.environ['DB_CONNECTION_STRING']
+
 print(db_connection_string)
 
 engine = create_engine(
@@ -20,7 +21,7 @@ def load_jobs_from_db():
     jobs = []
     for row in result.all():
         print (row[0])
-        jobs.append({"Name": row[1],"Designation":row[3],"Grade":row[4]})
+        jobs.append({"Name": row[1],"Emp_no":row[2],"Designation":row[3],"Grade":row[4]})
     return jobs
 
 def load_job_from_db(var1):

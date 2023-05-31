@@ -1,17 +1,28 @@
-<div class="border-bottom row" style="margin-bottom:16px;padding-bottom:8px;">
-  <div class="col-10">
-    <h4 
-      style="color:rgb(120,120,120); margin-bottom:4px;">
-      {{job['Name']}}
-    </h4>
+<div style="margin-bottom: 1px; ">
     <div>
-      <b>Designation:</b> {{job['Designation']}}
+        <style>
+            table {
+                width: 500px;
+                border-collapse: collapse;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            th, td {
+                border: 1px solid black;
+                padding: 2px;
+                width: 25%;
+                text-align:center
+            }
+        </style>
+
+        <table>
+            <tr>
+                <td>{{employee['Emp_no']}}</td>
+                <td>{{employee['Name']}}</td>
+                <td>{{employee['Designation']}}</td>
+                <td>{{employee['Grade']}}</td>
+            </tr>
+        </table>
     </div>
-    {% if 'Grade' in job %}
-    <div>
-      <b>Grade:</b> {{job['Grade']}}
-    </div>
-    {% endif %}
-  </div>
-   
 </div>
